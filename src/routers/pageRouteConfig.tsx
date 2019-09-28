@@ -20,13 +20,6 @@ const staticRotes: IStaticRoutes[] = [
     metas: [],
   },
   {
-    path: '/timer',
-    component: pages.Counter,
-    exact: true,
-    title: '主页',
-    metas: [],
-  },
-  {
     path: '',
     component: pages.NoMatchContainer,
     exact: true,
