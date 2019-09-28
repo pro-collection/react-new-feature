@@ -20,6 +20,13 @@ const staticRotes: IStaticRoutes[] = [
     metas: [],
   },
   {
+    path: '/props_child',
+    component: pages.PropsChild,
+    exact: true,
+    title: 'PropsChild',
+    metas: [],
+  },
+  {
     path: '',
     component: pages.NoMatchContainer,
     exact: true,
