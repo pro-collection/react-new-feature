@@ -7,8 +7,12 @@ const { Item: ListItem } = List;
 const HomeContainer: FC = () => {
   const pages = [
     {
-      page: '/props_child',
-      name: 'this.props.children传值到子组件',
+      path: '/props_child',
+      title: 'this.props.children传值到子组件',
+    },
+    {
+      path: '/use_imperative_handle',
+      title: 'UseImperativeHandle',
     },
   ];
 
@@ -20,9 +24,9 @@ const HomeContainer: FC = () => {
           <ListItem>
             <Link
               to={{
-                pathname: item.page,
+                pathname: item.path,
               }}>
-              {item.name}
+              {item.title}
             </Link>
           </ListItem>
         )}

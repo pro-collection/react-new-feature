@@ -27,6 +27,13 @@ const staticRotes: IStaticRoutes[] = [
     metas: [],
   },
   {
+    path: '/use_imperative_handle',
+    component: pages.UseImperativeHandle,
+    exact: true,
+    title: 'UseImperativeHandle',
+    metas: [],
+  },
+  {
     path: '',
     component: pages.NoMatchContainer,
     exact: true,
