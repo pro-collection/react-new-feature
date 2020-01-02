@@ -10,6 +10,11 @@
 
 <!-- tocstop -->
 
+### 涉及到的api
+- props.children
+- cloneElement
+- Children
+
 ### 场景描述
 如果父组件， 处理了很多逻辑， 这些逻辑都是封装在父级组件里面的， 如何传递给子组件呢？
 

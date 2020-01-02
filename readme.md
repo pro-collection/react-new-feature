@@ -5,6 +5,7 @@
     - cloneElement
     - Children
 
+- [useImperativeHandle]
 
 ### 待整理的重要属性
 - React.memo
