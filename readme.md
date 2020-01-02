@@ -6,3 +6,6 @@
     - Children
 
 
+### 待整理的重要属性
+- React.memo
+- React.wrappedComponentRef
