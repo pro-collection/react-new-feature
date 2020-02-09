@@ -7,13 +7,17 @@ const RouterComponent: FC<RouteComponentProps> = props => {
   const handleGoHome = () => props.history.goBack();
 
   const handlePushParams = () => {
-    props.history.push(
+    props.history.replace(
       `/router-component?${queryString.stringify({
         name: 'YanLeLe',
         age: 27,
         address: 'CQ',
       })}`,
     );
+  };
+
+  const handleGetParams = () => {
+    console.log(queryString.parse(props.location.search));
   };
 
   return (
@@ -24,6 +28,8 @@ const RouterComponent: FC<RouteComponentProps> = props => {
       <Button type={'default'} onClick={handlePushParams}>
         推送参数
       </Button>
+
+      <Button onClick={handleGetParams}>获取参数</Button>
     </>
   );
 };
