@@ -8,7 +8,7 @@ const RouterComponent: FC<RouteComponentProps> = props => {
 
   const handlePushParams = () => {
     props.history.replace(
-      `/router-component?${queryString.stringify({
+      `/router-component/?${queryString.stringify({
         name: 'YanLeLe',
         age: 27,
         address: 'CQ',
@@ -16,9 +16,9 @@ const RouterComponent: FC<RouteComponentProps> = props => {
     );
   };
 
-  const handleGetParams = () => {
-    console.log(queryString.parse(props.location.search));
-  };
+  const handleGetParams = () => console.log(queryString.parse(props.location.search));
+
+  const handleRemoveParams = () => props.history.replace('/router-component/');
 
   return (
     <>
@@ -28,6 +28,8 @@ const RouterComponent: FC<RouteComponentProps> = props => {
       <Button type={'default'} onClick={handlePushParams}>
         推送参数
       </Button>
+
+      <Button onClick={handleRemoveParams}>清空数据</Button>
 
       <Button onClick={handleGetParams}>获取参数</Button>
     </>
