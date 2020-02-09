@@ -12,4 +12,8 @@ export const pages: Pages[] = [
     path: '/use_imperative_handle',
     title: 'api: UseImperativeHandle',
   },
+  {
+    path: '/router-component',
+    title: 'react router',
+  },
 ];
