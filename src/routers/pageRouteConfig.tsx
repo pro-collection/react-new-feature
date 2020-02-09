@@ -34,6 +34,13 @@ const staticRotes: IStaticRoutes[] = [
     metas: [],
   },
   {
+    path: '/router-component',
+    component: pages.RouterComponent,
+    exact: true,
+    title: 'RouterComponent',
+    metas: [],
+  },
+  {
     path: '',
     component: pages.NoMatchContainer,
     exact: true,
