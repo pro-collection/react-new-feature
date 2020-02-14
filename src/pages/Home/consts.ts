@@ -16,4 +16,8 @@ export const pages: Pages[] = [
     path: '/router-component',
     title: 'react router',
   },
+  {
+    path: 'outer-click-example',
+    title: '外部点击',
+  },
 ];
