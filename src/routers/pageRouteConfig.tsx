@@ -11,7 +11,7 @@ export interface IStaticRoutes {
   metas?: any[];
 }
 
-const staticRotes: IStaticRoutes[] = [
+export const staticRotes: IStaticRoutes[] = [
   {
     path: '/',
     component: pages.HomeContainer,
