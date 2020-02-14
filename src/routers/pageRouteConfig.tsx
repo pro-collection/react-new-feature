@@ -48,6 +48,12 @@ export const staticRotes: IStaticRoutes[] = [
     metas: [],
   },
   {
+    path: '/blur-example',
+    component: pages.BlurExample,
+    exact: true,
+    title: '另外一种外部点击的实现',
+  },
+  {
     path: '',
     component: pages.NoMatchContainer,
     exact: true,

@@ -6,6 +6,7 @@ const PropsChild = () => import('../pages/PropsChild');
 const UseImperativeHandle = () => import('../pages/UseImperativeHandle');
 const RouterComponent = () => import('../pages/RouterComponent');
 const OuterClickExample = () => import('../pages/OuterClickExample');
+const BlurExample = () => import('../pages/BlurExample');
 
 const exportPages = {
   HomeContainer: loadableComponent(HomeContainer),
@@ -14,6 +15,7 @@ const exportPages = {
   UseImperativeHandle: loadableComponent(UseImperativeHandle),
   RouterComponent: loadableComponent(RouterComponent),
   OuterClickExample: loadableComponent(OuterClickExample),
+  BlurExample: loadableComponent(BlurExample),
 };
 
 export default exportPages;

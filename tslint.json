@@ -71,11 +71,11 @@
       "check-format",
       "allow-pascal-case"
     ],
-    "semicolon": [
-      true,
-      "always",
-      "ignore-interfaces"
-    ],
+//    "semicolon": [
+//      true,
+//      "always",
+//      "ignore-interfaces"
+//    ],
     "jsx-no-lambda": false,
     "jsx-no-string-ref": false,
     "jsx-boolean-value": [true, "never"],
