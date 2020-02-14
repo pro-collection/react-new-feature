@@ -1,7 +1,7 @@
 import React from 'react';
 import Loadable from 'react-loadable';
 // const Loadable = require('react-loadable');
-const Loading = (props: {error: any}) => {
+const Loading = (props: { error: any }) => {
   const { error } = props;
   if (error) {
     return (
@@ -10,15 +10,16 @@ const Loading = (props: {error: any}) => {
       </div>
     );
   }
-  return <div>{' '}</div>;
+  // tslint:disable-next-line:jsx-self-close
+  return <div> </div>;
 };
 
 const loadableComponent = (loader: any, render?: any) => {
   const config: {
-    loader: any,
-    loading: any,
-    delay: number,
-    render?: any,
+    loader: any;
+    loading: any;
+    delay: number;
+    render?: any;
   } = {
     loader,
     loading: Loading,

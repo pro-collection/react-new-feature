@@ -97,6 +97,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.0",
     "postcss-loader": "^3.0.0",
     "poststylus": "^1.0.0",
+    "prettier": "^1.19.1",
     "prettier-eslint-cli": "^5.0.0",
     "query-string": "^6.1.0",
     "rc-touchable": "^1.1.4",
@@ -140,12 +141,12 @@
     "react-howler": "^3.7.4",
     "react-redux": "^6.0.1",
     "redux-thunk": "^2.3.0",
-    "tslint": "^5.19.0",
+    "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-loader": "^3.6.0",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.6.2",
+    "typescript": "^3.7.5",
     "webrtc-adapter": "^7.2.1"
   }
 }
