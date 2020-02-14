@@ -41,6 +41,13 @@ const staticRotes: IStaticRoutes[] = [
     metas: [],
   },
   {
+    path: '/outer-click-example',
+    component: pages.OuterClickExample,
+    exact: true,
+    title: '外部点击',
+    metas: [],
+  },
+  {
     path: '',
     component: pages.NoMatchContainer,
     exact: true,
