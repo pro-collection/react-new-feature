@@ -10,7 +10,7 @@ export const pages: Pages[] = [
   },
   {
     path: '/use_imperative_handle',
-    title: 'api: UseImperativeHandle',
+    title: 'api: UseImperativeHandle - 获取子组件api的办法',
   },
   {
     path: '/router-component',
