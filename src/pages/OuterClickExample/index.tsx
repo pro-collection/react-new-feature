@@ -15,13 +15,14 @@ const OuterClickExample: FC = () => {
   const onClickHandler = () => setIsOpen(!isOpen);
 
   const onClickOutsideHandler = (event: any) => {
-    if (isOpen && toggleContainer.current?.contains(event.target)) {
+    console.log(`<${'='.repeat(50)}${'='.repeat(50)}>`);
+    if (isOpen && !toggleContainer.current?.contains(event?.target)) {
       setIsOpen(false);
     }
   };
 
   return (
-    <div ref={toggleContainer}>
+    <div ref={toggleContainer} className={styles.main_container}>
       <button onClick={onClickHandler}>select an option</button>
       {isOpen && (
         <ul className={styles.option_container}>
