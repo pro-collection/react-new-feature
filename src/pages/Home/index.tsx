@@ -9,10 +9,13 @@ export interface Pages {
 }
 
 const { Item: ListItem } = List;
-const pages: Pages[] = staticRotes.slice(1, staticRotes.length - 1).map(item => ({
-  path: item.path,
-  title: item.title,
-}));
+const pages: Pages[] = staticRotes
+  .slice(1, staticRotes.length - 1)
+  .filter(item => !item.path.includes('/context-demo'))
+  .map(item => ({
+    path: item.path,
+    title: item.title,
+  }));
 
 interface HomeContainerProps {
   pages?: Pages[];
