@@ -1,24 +1,17 @@
 import React, { Component, createContext } from 'react';
-import { Button, Row, Col } from 'antd';
-import BaseCodeView from '../../../components/BaseCodeView';
+import { Button } from 'antd';
+import CodeViewContainer from '../../../components/BaseCodeView/CodeViewContainer';
 
 const ThemeContext = createContext('light');
 
 class ContextDemo1 extends Component {
   render() {
     return (
-      <>
-        <Row>
-          <Col span={12}>
-            <BaseCodeView codePath="Context/ContextDemo1" />
-          </Col>
-          <Col span={12}>
-            <ThemeContext.Provider value={'dark'}>
-              <ToolBar />
-            </ThemeContext.Provider>
-          </Col>
-        </Row>
-      </>
+      <CodeViewContainer codePath="Context/ContextDemo1">
+        <ThemeContext.Provider value={'dark'}>
+          <ToolBar />
+        </ThemeContext.Provider>
+      </CodeViewContainer>
     );
   }
 }

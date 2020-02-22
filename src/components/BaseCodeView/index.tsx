@@ -6,7 +6,7 @@ import 'codemirror/theme/monokai.css';
 import 'codemirror/mode/jsx/jsx';
 import './index.css';
 
-interface BaseCodeViewProps {
+export interface BaseCodeViewProps {
   codePath: string;
 }
 
