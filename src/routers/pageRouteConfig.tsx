@@ -66,10 +66,10 @@ export const staticRotes: IStaticRoutes[] = [
     title: 'context - 最基础用法',
   },
   {
-    path: '',
+    path: '*',
     component: pages.NoMatchContainer,
     exact: true,
-    title: '主页',
+    title: '没有找到页面',
     metas: [],
   },
 ];

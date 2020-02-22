@@ -28,7 +28,7 @@ const resultPath = handleGetPage(pagePaths);
 
 const result = Object.entries(resultPath).reduce((result, [key, value]) => {
   return Object.assign(result, {
-    [key]: { code: fse.readFileSync(value, 'utf-8') },
+    [`GET /api/code/${key}/`]: { code: fse.readFileSync(value, 'utf-8') },
   });
 }, {});
 
