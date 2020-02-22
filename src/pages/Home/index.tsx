@@ -11,7 +11,7 @@ export interface Pages {
 const { Item: ListItem } = List;
 const pages: Pages[] = staticRotes
   .slice(1, staticRotes.length - 1)
-  .filter(item => !item.path.includes('/context-demo'))
+  .filter(item => !item.path.includes('/context/'))
   .map(item => ({
     path: item.path,
     title: item.title,

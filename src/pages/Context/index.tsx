@@ -3,7 +3,7 @@ import HomeContainer, { Pages } from '../Home';
 import staticRotes from '../../routers/pageRouteConfig';
 
 const pages: Pages[] = staticRotes
-  .filter(item => item.path.includes('/context-'))
+  .filter(item => item.path.includes('/context/demo'))
   .map(item => ({
     path: item.path,
     title: item.title,
