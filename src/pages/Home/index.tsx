@@ -3,7 +3,7 @@ import { List } from 'antd';
 import { Link } from 'react-router-dom';
 import staticRotes from '../../routers/pageRouteConfig';
 
-interface Pages {
+export interface Pages {
   path: string;
   title: string;
 }
@@ -14,11 +14,17 @@ const pages: Pages[] = staticRotes.slice(1, staticRotes.length - 1).map(item => 
   title: item.title,
 }));
 
-const HomeContainer: FC = () => {
+interface HomeContainerProps {
+  pages?: Pages[];
+}
+
+const HomeContainer: FC<HomeContainerProps> = props => {
+  const { pages: renderPage = pages } = props;
+
   return (
     <div style={{ margin: '0 20px' }}>
       <List
-        dataSource={pages}
+        dataSource={renderPage}
         renderItem={item => (
           <ListItem>
             <Link

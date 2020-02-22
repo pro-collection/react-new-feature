@@ -54,6 +54,12 @@ export const staticRotes: IStaticRoutes[] = [
     title: '另外一种外部点击的实现',
   },
   {
+    path: '/context',
+    component: pages.Context,
+    exact: true,
+    title: 'context',
+  },
+  {
     path: '',
     component: pages.NoMatchContainer,
     exact: true,
