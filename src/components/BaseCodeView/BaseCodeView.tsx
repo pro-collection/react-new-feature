@@ -7,17 +7,15 @@ import 'codemirror/mode/jsx/jsx';
 import './index.css';
 
 interface BaseCodeViewProps {
-  name: string | string[];
-  apiPrefix: string;
+  codePath: string;
 }
 
 const BaseCodeView: FunctionComponent<BaseCodeViewProps> = props => {
-  const { name, apiPrefix } = props;
   const [code, updateCode] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get(`/api/${apiPrefix}-${name}/`);
+      const response = await axios.get(`/api/code-template/${props.codePath}`);
       updateCode(response.data.code);
     };
     fetchData();
