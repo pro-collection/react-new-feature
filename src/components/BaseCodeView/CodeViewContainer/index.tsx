@@ -3,7 +3,7 @@ import { Col, Row } from 'antd';
 import BaseCodeView, { BaseCodeViewProps } from '../index';
 import axios from 'axios';
 
-const CodeViewContainer: FC<BaseCodeViewProps> = props => {
+const CodeViewContainer: FC<Pick<BaseCodeViewProps, 'codePath'>> = props => {
   const [code, updateCode] = useState();
 
   useEffect(() => {

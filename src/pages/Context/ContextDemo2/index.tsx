@@ -19,7 +19,6 @@ const ThemeContext = createContext(themes.dark);
 /* ==============================  const - End   ============================== */
 
 /* ==============================  ThemedButton - Start ============================== */
-
 class ThemedButton extends Component<{ onClick: () => void }> {
   render() {
     const { context } = this;
@@ -36,13 +35,13 @@ ThemedButton.contextType = ThemeContext;
 /* ==============================  ThemedButton - End   ============================== */
 
 /* ==============================  ToolBar：ThemedButton 的一个中间件 - Start ============================== */
-
 const ToolBar: FC<{ changeTheme: () => void }> = props => {
   return <ThemedButton onClick={props.changeTheme}>Change Theme</ThemedButton>;
 };
 
 /* ==============================  ToolBar：ThemedButton 的一个中间件 - End   ============================== */
 
+/* ==============================  ContextDemo2 - Start ============================== */
 interface ContextDemo2State {
   theme: {
     foreground: string;
@@ -71,5 +70,7 @@ class ContextDemo2 extends Component<any, ContextDemo2State> {
     );
   }
 }
+
+/* ==============================  ContextDemo2 - End   ============================== */
 
 export default ContextDemo2;
