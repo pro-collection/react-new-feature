@@ -8,34 +8,21 @@ import './index.css';
 
 export interface BaseCodeViewProps {
   codePath: string;
+  code: string;
 }
 
 const Index: FunctionComponent<BaseCodeViewProps> = props => {
-  const [code, updateCode] = useState();
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const response = await axios.get(`/api/code/${props.codePath}/`);
-      updateCode(response.data.code);
-    };
-    fetchData();
-  }, []);
-
   return (
-    <>
-      {code && (
-        <div className="code-mirror-container">
-          <CodeMirror
-            value={code}
-            options={{
-              mode: 'jsx',
-              theme: 'monokai',
-              lineNumbers: true,
-            }}
-          />
-        </div>
-      )}
-    </>
+    <div className="code-mirror-container">
+      <CodeMirror
+        value={props.code}
+        options={{
+          mode: 'jsx',
+          theme: 'monokai',
+          lineNumbers: true,
+        }}
+      />
+    </div>
   );
 };
 
