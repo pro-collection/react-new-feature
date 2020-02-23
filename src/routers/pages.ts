@@ -10,6 +10,7 @@ const BlurExample = () => import('../pages/BlurExample');
 const Context = () => import('../pages/Context');
 const ContextDemo1 = () => import('../pages/Context/ContextDemo1');
 const ContextDemo2 = () => import('../pages/Context/ContextDemo2');
+const ContextDemo3 = () => import('../pages/Context/ContextDemo3');
 
 const exportPages = {
   HomeContainer: loadableComponent(HomeContainer),
@@ -22,6 +23,7 @@ const exportPages = {
   Context: loadableComponent(Context),
   ContextDemo1: loadableComponent(ContextDemo1),
   ContextDemo2: loadableComponent(ContextDemo2),
+  ContextDemo3: loadableComponent(ContextDemo3),
 };
 
 export default exportPages;

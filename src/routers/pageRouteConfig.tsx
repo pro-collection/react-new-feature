@@ -72,6 +72,12 @@ export const staticRotes: IStaticRoutes[] = [
     title: 'context - 动态 Context',
   },
   {
+    path: '/context/demo3',
+    component: pages.ContextDemo3,
+    exact: true,
+    title: 'context - 在嵌套组件中更新 Context',
+  },
+  {
     path: '*',
     component: pages.NoMatchContainer,
     exact: true,
