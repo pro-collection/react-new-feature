@@ -57,7 +57,7 @@ class ContextDemo2 extends Component<any, ContextDemo2State> {
 
   toggleTheme = () => {
     this.setState(state => ({
-      theme: state.theme === themes.dark ? themes.dark : themes.light,
+      theme: state.theme === themes.dark ? themes.light : themes.dark,
     }));
   };
 
