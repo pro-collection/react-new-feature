@@ -1,8 +1,11 @@
 import React, { Component, createContext, FC } from 'react';
 import CodeViewContainer from '../../../components/BaseCodeView/CodeViewContainer';
 
-/* ==============================  const - Start ============================== */
+/*
+ * 动态更新 Context
+ * */
 
+/* ==============================  const - Start ============================== */
 const themes = {
   light: {
     foreground: '#000000',
@@ -15,7 +18,6 @@ const themes = {
 };
 
 const ThemeContext = createContext(themes.dark);
-
 /* ==============================  const - End   ============================== */
 
 /* ==============================  ThemedButton - Start ============================== */
@@ -31,7 +33,6 @@ class ThemedButton extends Component<{ onClick: () => void }> {
 }
 
 ThemedButton.contextType = ThemeContext;
-
 /* ==============================  ThemedButton - End   ============================== */
 
 /* ==============================  ToolBar：ThemedButton 的一个中间件 - Start ============================== */
@@ -70,7 +71,6 @@ class ContextDemo2 extends Component<any, ContextDemo2State> {
     );
   }
 }
-
 /* ==============================  ContextDemo2 - End   ============================== */
 
 export default ContextDemo2;
