@@ -4,6 +4,7 @@ import CodeViewContainer from '../../../components/BaseCodeView/CodeViewContaine
 
 const ThemeContext = createContext('light');
 
+/* 基础使用 */
 class ContextDemo1 extends Component {
   render() {
     return (

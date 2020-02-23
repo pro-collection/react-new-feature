@@ -66,6 +66,12 @@ export const staticRotes: IStaticRoutes[] = [
     title: 'context - 最基础用法',
   },
   {
+    path: '/context/demo2',
+    component: pages.ContextDemo2,
+    exact: true,
+    title: 'context - 动态 Context',
+  },
+  {
     path: '*',
     component: pages.NoMatchContainer,
     exact: true,
