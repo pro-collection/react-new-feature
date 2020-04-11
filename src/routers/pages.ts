@@ -11,6 +11,8 @@ const Context = () => import('../pages/Context');
 const ContextDemo1 = () => import('../pages/Context/ContextDemo1');
 const ContextDemo2 = () => import('../pages/Context/ContextDemo2');
 const ContextDemo3 = () => import('../pages/Context/ContextDemo3');
+const Refs = () => import('../pages/Refs');
+const RefsDemo1 = () => import('../pages/Refs/RefsDemo1');
 
 const exportPages = {
   HomeContainer: loadableComponent(HomeContainer),
@@ -24,6 +26,8 @@ const exportPages = {
   ContextDemo1: loadableComponent(ContextDemo1),
   ContextDemo2: loadableComponent(ContextDemo2),
   ContextDemo3: loadableComponent(ContextDemo3),
+  Refs: loadableComponent(Refs),
+  RefsDemo1: loadableComponent(RefsDemo1),
 };
 
 export default exportPages;

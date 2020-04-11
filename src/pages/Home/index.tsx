@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { List } from 'antd';
 import { Link } from 'react-router-dom';
-import staticRotes from '../../routers/pageRouteConfig';
+import staticRotes, { notIncludePath } from '../../routers/pageRouteConfig';
 
 export interface Pages {
   path: string;
@@ -11,7 +11,8 @@ export interface Pages {
 const { Item: ListItem } = List;
 const pages: Pages[] = staticRotes
   .slice(1, staticRotes.length - 1)
-  .filter(item => !item.path.includes('/context/'))
+  // .filter(item => !item.path.includes('/context/demo'))
+  .filter(item => !notIncludePath.includes(item.path))
   .map(item => ({
     path: item.path,
     title: item.title,
