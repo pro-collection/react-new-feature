@@ -26,7 +26,7 @@ const RefsDemo2: FC = () => {
 
   useEffect(() => {
     console.log(`<${'='.repeat(50)}${'='.repeat(50)}>`);
-    console.log(childRef.current);
+    console.log('childRef.current', childRef.current);
     console.log(`<${'='.repeat(50)}${'='.repeat(50)}>`);
   }, []);
 
