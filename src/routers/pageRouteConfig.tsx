@@ -88,13 +88,19 @@ export const staticRotes: IStaticRoutes[] = [
     path: '/ref',
     component: pages.Refs,
     exact: true,
-    title: 'ref',
+    title: 'ref - 转发',
   },
   {
     path: '/ref/demo1',
     component: pages.RefsDemo1,
     exact: true,
     title: 'ref - 最基础使用',
+  },
+  {
+    path: '/ref/demo2',
+    component: pages.RefsDemo2,
+    exact: true,
+    title: 'ref - 子组件向父组件转发内部方法',
   },
   /* ==============================  Refs 转发 - End   ============================== */
 
@@ -107,6 +113,6 @@ export const staticRotes: IStaticRoutes[] = [
   },
 ];
 
-export const notIncludePath = ['/context/demo1', '/context/demo2', '/context/demo3', '/ref/demo1'];
+export const notIncludePath = ['/context/demo1', '/context/demo2', '/context/demo3', '/ref/demo1', '/ref/demo2'];
 
 export default staticRotes;
