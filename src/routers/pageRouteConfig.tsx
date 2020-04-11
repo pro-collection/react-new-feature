@@ -40,6 +40,7 @@ export const staticRotes: IStaticRoutes[] = [
     title: 'RouterComponent',
     metas: [],
   },
+  /* ==============================  失去焦点收起的实现 - Start ============================== */
   {
     path: '/outer-click-example',
     component: pages.OuterClickExample,
@@ -53,6 +54,9 @@ export const staticRotes: IStaticRoutes[] = [
     exact: true,
     title: '另外一种外部点击的实现',
   },
+  /* ==============================  失去焦点收起的实现 - End   ============================== */
+
+  /* ==============================  context - Start ============================== */
   {
     path: '/context',
     component: pages.Context,
@@ -77,6 +81,8 @@ export const staticRotes: IStaticRoutes[] = [
     exact: true,
     title: 'context - 在嵌套组件中更新 Context',
   },
+  /* ==============================  context - End   ============================== */
+
   {
     path: '*',
     component: pages.NoMatchContainer,
