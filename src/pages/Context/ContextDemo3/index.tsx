@@ -1,4 +1,5 @@
 import React, { Component, createContext } from 'react';
+import CodeViewContainer from '../../../components/BaseCodeView/CodeViewContainer';
 
 /*
  * 在嵌套组件中更新 Context
@@ -70,11 +71,14 @@ class ContextDemo3 extends Component<any, ContextDemo3State> {
 
   render() {
     return (
-      <Provider value={Object.assign({}, this.state, { toggleTheme: this.toggleTheme })}>
-        <Content />
-      </Provider>
+      <CodeViewContainer codePath="Context/ContextDemo3">
+        <Provider value={Object.assign({}, this.state, { toggleTheme: this.toggleTheme })}>
+          <Content />
+        </Provider>
+      </CodeViewContainer>
     );
   }
 }
+
 export default ContextDemo3;
 /* ==============================  ContextDemo3 - End   ============================== */
