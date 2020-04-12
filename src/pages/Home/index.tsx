@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { List } from 'antd';
 import { Link } from 'react-router-dom';
-import staticRotes, { notIncludePath } from '../../routers/pageRouteConfig';
+import staticRotes, { notIncludePath } from '@src/routers/pageRouteConfig';
 
 export interface Pages {
   path: string;

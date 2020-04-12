@@ -121,7 +121,7 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
     modules: [path.resolve(paths.PATH_SRC), path.resolve('node_modules')],
     alias: {
-      '@': path.resolve(__dirname, '../src'), // 这样配置后 @ 可以指向 src 目录
+      '@src': path.resolve(__dirname, '../src'), // 这样配置后 @ 可以指向 src 目录
     },
   },
 };
