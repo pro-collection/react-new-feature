@@ -103,6 +103,12 @@ export const staticRotes: IStaticRoutes[] = [
     title: 'ref - 子组件向父组件转发内部方法',
   },
   /* ==============================  Refs 转发 - End   ============================== */
+  {
+    path: '/profiler',
+    component: pages.Profiler,
+    exact: true,
+    title: 'Profiler - 性能监控',
+  },
 
   {
     path: '*',
